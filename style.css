@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.weatherCheck{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.card{
+    height:550px;
+    width: 350px;
+    padding: 30px;
+    background-color: rgb(87, 0, 145);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px black;
+    overflow: auto;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+  }
+
+.card {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+.search-box{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding: 10px 20px;
+    gap: 6px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    align-items: center;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.search-box>input{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.search-box>input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.search-box>button{
+    color: white;
+    font-size: small;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.search-box>button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.primary-details{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 15px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+.primary-row1{
+    display: flex;
+    gap: 20px;
+}
+.city-loc{
+    display: flex;
+    flex-direction: column;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+.primary-details>h1,h2,p{
+    color: white;
+    font-size: 20px;
+}
+
+.secondary-details{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 20px;
+}
+
+.humidity, .wind{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 15px;
+    gap: 5px;
+    align-items: center;
+}
+.humidity-details, .wind-details{
+    color: white;
+    font-size: 6px;
+    text-wrap: nowrap;
+}
+
+.wd, .wd2, .hd, .hd2{
+    font-size: 14px;
+}
+
+.primary-details, .secondary-details{
+    display: none;
+}
+
+.error{
+    display: none;
+    color: rgb(214, 0, 0);
+}
